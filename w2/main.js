@@ -17,5 +17,6 @@ const myTransportation = 4;
 // 9. add up your points.
 const cfptotal = "62";
 //10. write JS to update the rendered html (index.html) with total footprint.
-const myheadings= document.querySelector;("h2")
+const myheadings= document.querySelector;("H2")
 myheadings.textcontent = cfptotal;
+
