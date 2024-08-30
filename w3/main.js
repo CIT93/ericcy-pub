@@ -1,30 +1,30 @@
-let carbonFootprintPoints = 0;
-//const numberInHousehould = 3;
+let houseHoldSize = 10;
+let mediumSize = 7;
+let smallSize = 4;
+let aparmentH = 2
+const houseSize = "large";
+const medHouseSize = "medium"
+const smaHouseSize = "small"
+const apHouse = "apartment"
 
-function determineHouseHoldpts(numberInHousehould) {
+
+function determineHousesizepts(houseHoldSize) {
     console.log("inside the function");
-    if (numberInHousehould === 1) {
-        carbonFootprintPoints = carbonFootprintPoints + 14;
-    } else if (numberInHousehould === 2) {
-        carbonFootprintPoints = carbonFootprintPoints + 12;
-    } else if (numberInHousehould === 3)
-        carbonFootprintPoints = carbonFootprintPoints + 10;
-    else if (numberInHousehould === 4) {
-        carbonFootprintPoints = carbonFootprintPoints + 8;
-    } else if (carbonFootprintPoints === 5) {
-        carbonFootprintPoints = carbonFootprintPoints + 6;
-    } else if (numberInHousehould === 6) {
-        carbonFootprintPoints = carbonFootprintPoints + 4;
-    } else if (numberInHousehould > 6) {
-        carbonFootprintPoints = carbonFootprintPoints + 2;
+
+    if (houseSize === "large") {
+        houseHoldSize = houseHoldSize + 10;
+    } else if (medHouseSize === "medium") {
+        mediumSize = mediumSize + 7;
+    } else if (smallSize === "small") {
+        smaHouseSize = smaHouseSize + 4;
+    } else if (aparmentH === "apartment") {
+        apHouse = apHouse+ 2;
     }
-     console.log(`based on the number of the household of ${numberInHousehould} the points would be ${carbonFootprintPoints}.`)
+    console.log(`based on the housesize ${houseSize} the points would be ${houseHoldSize}.`)
+    console.log(`based on the householdsize ${medHouseSize} the points would be ${mediumSize}`)
+    console.log(`based on the householdsize ${smaHouseSize} the points would be ${smallSize}`)
+    console.log(`based on the householdsize ${apHouse} the points would be ${aparmentH}`)
 }
 
-
-
-
-// global scope
-
-determineHouseHoldpts(3)
-determineHouseHoldpts(4)
+determineHousesizepts()
+determineHousesizepts(2)
