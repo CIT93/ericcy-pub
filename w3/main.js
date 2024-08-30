@@ -16,7 +16,7 @@ function determineHouseSize(houseSize){
     if (houseSize === "large") {
         houseHoldSize = houseHoldSize + 10;
     } else if (houseHoldSize === "medium") {
-        mediumSize = houseHoldSize + 7;
+        mediumSize = mediumSize + 7;
     } else if (smallSize === "small") {
         smaHouseSize = smaHouseSize + 4;
     } else if (aparmentH === "apartment") {
