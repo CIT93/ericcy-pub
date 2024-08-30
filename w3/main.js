@@ -1,20 +1,22 @@
-let houseHoldSize = 10;
+let houseHoldSize = 0;
 let mediumSize = 7;
 let smallSize = 4;
-let aparmentH = 2
+let aparmentH = 2;
 const houseSize = "large";
 const medHouseSize = "medium"
 const smaHouseSize = "small"
 const apHouse = "apartment"
 
 
-function determineHousesizepts(houseHoldSize) {
-    console.log("inside the function");
+function determineHouseSize(houseSize){
+    
+   
+    console.log("houseSizes");
 
     if (houseSize === "large") {
         houseHoldSize = houseHoldSize + 10;
-    } else if (medHouseSize === "medium") {
-        mediumSize = mediumSize + 7;
+    } else if (houseHoldSize === "medium") {
+        mediumSize = houseHoldSize + 7;
     } else if (smallSize === "small") {
         smaHouseSize = smaHouseSize + 4;
     } else if (aparmentH === "apartment") {
@@ -26,5 +28,4 @@ function determineHousesizepts(houseHoldSize) {
     console.log(`based on the householdsize ${apHouse} the points would be ${aparmentH}`)
 }
 
-determineHousesizepts()
-determineHousesizepts(2)
+determineHouseSize("large")
