@@ -64,9 +64,23 @@ function start(houseHoldMembers, houseSize) {
     for (arr of cfpData){
         console.log(arr)
         const output = document.getElementById("output");
-        const newP = document.createElement("P")
-        newP.textContent = `Carbon Footprint total is ${arr[4]}`;
-        output.appendChild(newP)
+        const newP1 = document.createElement("P")
+        const newP2 = document.createElement("P")
+        const newP3 = document.createElement("P")
+        const newP4 = document.createElement("P")
+        const newP5 = document.createElement("P")
+        const newP6 = document.createElement("P")
+        newP1.textContent = `Carbon Footprint total is ${arr[4]}`;
+        newP2.textContent = `number of household members is ${arr[2]}`
+        newP3.textContent =  `the score of house members is ${arr[2]}}`
+        newP4.textContent =  `the size of house is ${arr[1]}`
+        newP5.textContent =  `score of the house is ${arr[3]}`
+
+     output.appendChild(newP1);
+     output.appendChild(newP2);
+     output.appendChild(newP3);
+     output.appendChild(newP4);
+     output.appendChild(newP5);
     }
  }
 
@@ -74,9 +88,13 @@ start(5, "apt");
 start(4, "large");
 start(3, "medium");
 start(2, "small");
-start(1, "apt")
+start(2, "apt")
 
 
+start(8, "large")
+start(4, "apt")
+start(1, "medium")
+start(2, "small")
 displayOutput()
 
  
