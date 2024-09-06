@@ -61,14 +61,20 @@ function start(houseHoldMembers, houseSize) {
  //const myInputs = [5, "apt"]; // on the global scope
  
  function displayOutput(){
-    
+    for (arr of cfpData){
+        console.log(arr)
+        const output = document.getElementById("output");
+        const newP = document.createElement("P")
+        newP.textContent = `Carbon Footprint total is ${arr[4]}`;
+        output.appendChild(newP)
+    }
  }
 
 start(5, "apt");
 start(4, "large");
 start(3, "medium");
 start(2, "small");
-strat(1, "apt")
+start(1, "apt")
 
 
 displayOutput()
