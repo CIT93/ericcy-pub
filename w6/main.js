@@ -54,7 +54,7 @@ function start(houseHoldMembers, houseSize) {
 }
 
 
-function displayoutput(firstname, lastname) {
+function displayoutput() {
     for (obj of cfpData) {
 
         const newH2 = document.createElement("h2");
@@ -87,7 +87,7 @@ FORM.addEventListener("submit", function (e) {
    const houseSize = FORM.houses.value;
    start(houseMembers, houseSize);
    OUTPUT.innerHTML = "";
-   displayoutput(firstname, lastname);
+   displayoutput();
    FORM.reset();
 })
 
